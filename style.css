@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+}
+
+.navbar {
+    background-color: #51107A;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+.test{
+    display:none;
+}
