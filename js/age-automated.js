@@ -29,7 +29,7 @@ function updateText() {
 
     if (i === spans.length - 1) {
       // Trigger the next iteration after 10 seconds
-      setTimeout(updateAndDisplayText, 10000);
+      setTimeout(updateAndDisplayText, 1000);
     }
   });
 }

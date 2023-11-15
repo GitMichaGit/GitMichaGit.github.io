@@ -18,7 +18,7 @@ function runTextAnimation() {
           index = 0;
           // Starte die Animation erneut
           runTextAnimation();
-        }, 30000);
+        }, 10000);
       }
     }
     
