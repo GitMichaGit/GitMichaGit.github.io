@@ -3,6 +3,10 @@ body {
     display: grid;
 }
 
+h1{
+    color:#860FD1;
+}
+
 p {
     color:white;
 }
@@ -20,6 +24,10 @@ ul {
     list-style: none;
 }
 
+p {
+    font-size: 20px;
+}
+
 .content {
     margin: auto;
 }
@@ -29,6 +37,9 @@ ul {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
+span {
+    font-size:35px;
+}
 
 .first-content-text {
     font-size: 50px;
