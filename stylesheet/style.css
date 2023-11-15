@@ -3,10 +3,22 @@ body {
     display: grid;
 }
 
+p {
+    color:white;
+}
+
+a {
+    color: white;
+}
+
+div {
+    color: white;
+}
+
 .content {
     margin: auto;
 }
- 
+
 .navbar {
     background-color: #51107A;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -14,8 +26,8 @@ body {
 
 .first-content-text {
     font-size: 50px;
-    color: white
 }
+
 /* 
 .first-letter {
     color: rgb(255, 123, 0);
