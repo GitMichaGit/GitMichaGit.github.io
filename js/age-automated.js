@@ -1,6 +1,5 @@
 const textContainer = document.getElementById('age-container');
 let birthDate = new Date("1998-01-20");
-let index = 0;
 
 function updateText() {
   const today = new Date();
@@ -10,7 +9,7 @@ function updateText() {
 
   const newText = `Hi there! I'm a ${years} year old junior software developer.`;
 
-  textContainer.innerHTML = ''; 
+  textContainer.innerHTML = '';
 
   const spans = Array.from(newText).map((char, i) => {
     const span = document.createElement('span');
@@ -29,10 +28,8 @@ function updateText() {
     textContainer.appendChild(span);
 
     if (i === spans.length - 1) {
-      setTimeout(() => {
-        index = 0; // Reset index at the end of the text
-        updateAndDisplayText(); // Trigger the next iteration
-      }, 50);
+      // Trigger the next iteration after 10 seconds
+      setTimeout(updateAndDisplayText, 10000);
     }
   });
 }
@@ -42,5 +39,3 @@ function updateAndDisplayText() {
 }
 
 updateAndDisplayText();
-
-setInterval(updateAndDisplayText, 50);
