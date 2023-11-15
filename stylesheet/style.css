@@ -1,6 +1,10 @@
 body {
     background-color: rgb(26, 26, 26);
-    display:grid;
+    display: grid;
+}
+
+.content {
+    margin: auto;
 }
 
 .navbar {
@@ -8,20 +12,15 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* TPODO */
-/* .nav-item {
-    padding-left:200px;
-} */
-
-.opening-text {
+.first-content-text {
     font-size: 50px;
-    color:white
+    color: white
+}
+/* 
+.first-letter {
+    color: rgb(255, 123, 0);
 }
 
-.first-letter {
-    color: rgb(255, 123, 0); /* Ändere die Farbe nach Bedarf */
-  }
-
-  .last-letter {
-    color: rgb(255, 123, 0); /* Ändere die Farbe nach Bedarf */
-  }
+.last-letter {
+    color: rgb(255, 123, 0);
+} */
