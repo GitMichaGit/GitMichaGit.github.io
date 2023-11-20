@@ -3,12 +3,12 @@ body {
     display: grid;
 }
 
-h1{
-    color:#860FD1;
+h1 {
+    color: #860FD1;
 }
 
 p {
-    color:white;
+    color: white;
 }
 
 a {
@@ -33,16 +33,21 @@ p {
 }
 
 .navbar {
+    /* background-color: rgb(26, 26, 26); */
     background-color: #860fd1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 span {
-    font-size:35px;
+    /* font-size:35px; */
+}
+
+.nav-content-text {
+    font-size: 50px;
 }
 
 .first-content-text {
-    font-size: 50px;
+    font-size: 20px;
 }
 
 /* 
@@ -52,3 +57,45 @@ span {
 .last-letter {
     color: rgb(255, 123, 0);
 } */
+
+
+#light {
+    /* position: relative; */
+    /* top: 150px; */
+}
+
+#lineh1 {
+    position: absolute;
+    left: 0;
+    height: 10px;
+    background: rgb(4, 78, 138);
+    animation: lineH 6s 1s infinite linear;
+}
+
+@keyframes lineH {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 95%;
+        opacity: 0;
+    }
+}
+
+
+.image-container {
+    position: relative;
+    /* /* overflow: hidden; */
+}
+
+.zoom-image {
+    width: 300px;
+    /* border-radius: 50%; */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.zoom-image:hover {
+    transform: scale(1.1);
+    filter: brightness(1.5); /* Farbänderung für den Hover-Effekt */
+}
