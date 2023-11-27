@@ -23,11 +23,12 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a href="index.html">
+    <!-- <a href="index.html">
       <img src="img/logo-nav.png" alt="icon" style="padding: 10px; width: 100px; height: 100px;" />
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    </a> -->
+    <button style="margin-right:20px" class="navbar-toggler ms-auto nav-button" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
@@ -40,23 +41,51 @@
 
   <div class="content">
 
-    <div style="margin-top:25px;">
+
+
+
+    <div style="margin-top:60px;">
+
       <div class="container">
         <div class="row">
-          <div class="col-lg-5 d-flex" style="justify-content: center;">
-            <img src="img/logo.png" alt="self-portrait" style="width:300px; height:300px; border-radius: 100%;">
+          <div class="col-lg-4 intro-two" style="background-image: url(/img/background-img.png); 
+          background-repeat: no-repeat; overflow: visible;">
+            <div id="age-container" class="first-content-text">
+            </div>
           </div>
-          <div class="col-lg-7 d-flex" style="justify-content: center; padding-top:75px;">
-            <div id="age-container" class="first-content-text"></div>
+          <div id="intro" class="col-lg-8 intro d-flex" style="justify-content: center;">
+            <img src="img/logo.png" alt="self-portrait"
+            style="width: 500px; height: 500px; border-radius: 100%; background-position: center;">
           </div>
         </div>
       </div>
+
+
+
+
+
+
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col-lg-8 d-flex">
+            <img class="logo" src="img/logo.png" alt="self-portrait"
+              style="width:600px; height:600px; border-radius: 100%; background-position: center;">
+          </div>
+          <div class="col-lg-4 d-flex logo-two"
+            style="height:500px;justify-content: center; padding-top:75px; background-image: url(/img/background-img.png); background-repeat: no-repeat; background-position: center; overflow: visible;">
+            <div id="age-container" class="first-content-text">
+            </div>
+          </div>
+        </div>
+      </div> -->
     </div>
 
 
-    <div id="project-list" class="first-content-text" style="margin:25px; padding:25px;">
-      <div class="image-container">
-        <h1 class="zoom-image">Bilder Datenbank <i class="bi bi-database"></i></h1>
+    <div id="project-list" class="main-content-text" style="padding:50px;">
+      <div class="image-container"
+        style="background-image: url(img/background-img.png); background-repeat: no-repeat; background-size: contain; background-position: center;">
+        <h1>Bilder Datenbank <i class="bi bi-database"></i></h1>
+        <!-- <h1 class="zoom-image">Bilder Datenbank <i class="bi bi-database"></i></h1> -->
         <p>Bei meiner Arbeit als Junior Software Developer bei Laufwerk.it konnte ich nicht nur an der Optimierung von
           Webseiten für verschiedene Unternehmen mitwirken,
           sondern auch an der Entwicklung eines coolen Bildersortierungssystems. Das System sortiert die Bilder ganz
@@ -64,7 +93,8 @@
           Das war nicht nur eine interessante Herausforderung, sondern hat mir auch gezeigt, wie kreativ und vielseitig
           die Welt der Softwareentwicklung sein kann.</p>
       </div>
-      <div>
+      <div
+        style="background-image: url(img/background-img.png); background-repeat: no-repeat; background-size: contain; background-position: bottom;">
         <h1>Range Map <i class="bi bi-map"></i></h1>
         <p>Zu meinen Projekten gehörte auch die Entwicklung einer Range-Map – eine interaktive Karte, auf der Sie
           verschiedene Flugzeugmodelle auswählen können.
@@ -73,7 +103,8 @@
           Diese innovative Lösung ermöglicht es Ihnen, auf einen Blick zu sehen, wie weit Sie mit jedem Modell fliegen
           können.</p>
       </div>
-      <div>
+      <div
+        style="background-image: url(img/background-img.png); background-repeat: no-repeat; background-size: contain; background-position: right;">
         <h1>Webshop - dotCoffee <i class="bi bi-shop"></i></h1>
         <p>
           Ich bin besonders stolz auf meinen Webshop, den ich im Rahmen meines FH-Projekts entwickelt habe.
@@ -92,6 +123,7 @@
 </body>
 
 <script src="js/age-automated.js"></script>
-<script src="js/text-automated.js"></script>r
+<script src="js/text-automated.js"></script>
+<script src="js/text-slide.js"></script>
 
 </html>

@@ -46,8 +46,65 @@ span {
     font-size: 50px;
 }
 
+@media (max-width: 600px) {
+    .nav-content-text {
+        font-size:27px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 400px !important;
+        height: 400px !important;
+    }
+}
+
 .first-content-text {
     font-size: 20px;
+    text-align: center;
+    padding-top: 200px;
+    width: 450px;
+}
+
+@media (max-width: 768px) {
+    .first-content-text {
+        border:solid red;
+        width: auto;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro-two {
+        display:flex;
+        justify-content: center;
+        border: solid;
+        width: 300px;
+        height: 300px;
+        padding-bottom: 170px;
+    }
+}
+
+/* .navbar-toggler {
+    display: none;
+} */
+
+@media (max-width: 600px) {
+    .main-content-text{
+        display:block !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro {
+        display:none !important;
+        padding-bottom: 170px;
+    }
+}
+
+
+.main-content-text {
+    display: flex;
 }
 
 /* 
@@ -58,17 +115,12 @@ span {
     color: rgb(255, 123, 0);
 } */
 
-
-#light {
-    /* position: relative; */
-    /* top: 150px; */
-}
-
 #lineh1 {
     position: absolute;
     left: 0;
-    height: 10px;
-    background: rgb(4, 78, 138);
+    height: 8px;
+    /* background: rgb(4, 78, 138); */
+    background: rgb(255, 138, 12);
     animation: lineH 6s 1s infinite linear;
 }
 
@@ -83,7 +135,6 @@ span {
     }
 }
 
-
 .image-container {
     position: relative;
     /* /* overflow: hidden; */
@@ -97,5 +148,41 @@ span {
 
 .zoom-image:hover {
     transform: scale(1.1);
-    filter: brightness(1.5); /* Farbänderung für den Hover-Effekt */
+    filter: brightness(1.5);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.intro-two {
+    animation: fadeIn 6s ease-in-out;
+}
+
+.intro.slide-right {
+    /* justify-content: flex-end; */
+    animation: slideRight 2s ease-in-out forwards;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(30%);
+    }
 }
