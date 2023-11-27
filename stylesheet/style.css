@@ -68,20 +68,23 @@ span {
 
 @media (max-width: 768px) {
     .first-content-text {
-        border:solid red;
         width: auto;
-        font-size: 15px;
+        font-size: 20px;
     }
 }
 
 @media (max-width: 600px) {
     .intro-two {
+        background-size: contain !important;
         display:flex;
         justify-content: center;
-        border: solid;
-        width: 300px;
-        height: 300px;
         padding-bottom: 170px;
+    }
+}
+
+@media (min-width: 768px) {
+    .intro-two {
+        margin-right: -350px !important;
     }
 }
 
@@ -184,5 +187,13 @@ span {
     }
     to {
         transform: translateX(30%);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .first-row {
+        display:flex;
+        justify-content: center;
     }
 }
