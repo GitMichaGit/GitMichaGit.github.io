@@ -236,3 +236,7 @@ span {
     background-size: contain;
     background-position: center;
 }
+
+.collapse:not(.show) {
+    display: unset;
+  }
